@@ -1,6 +1,6 @@
 
-const Car=()=>{
-    return(
+const Car = () => {
+    return (
         <>
             <h1>Car</h1>
         </>

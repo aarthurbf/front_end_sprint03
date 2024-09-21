@@ -1,6 +1,6 @@
 
-const Stream=()=>{
-    return(
+const Stream = () => {
+    return (
         <>
             <h1>Stream</h1>
         </>

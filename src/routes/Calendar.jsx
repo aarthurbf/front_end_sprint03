@@ -1,6 +1,6 @@
 
-const Calendar=()=>{
-    return(
+const Calendar = () => {
+    return (
         <>
             <h1>Calendar</h1>
         </>
