@@ -33,4 +33,36 @@ export const NavStyle = styled.section`
     .icon{
         width:1.2rem;        
     }
+
+    @media (max-width: 768px) {
+        .header .header-container {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo {
+            width: 50%;
+            height: auto;
+            margin: 0 auto;
+            display: block;
+        }
+
+        .header ul {
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .header .link {
+            padding: 0.5rem;
+            font-size: 1.2rem;
+        }
+    }
+    @media (max-width: 425px){
+        .header ul{
+            flex-direction: column;
+        }
+    }
+    
 `   
