@@ -12,7 +12,7 @@ export const FooterStyle = styled.section`
         margin: 1% 0%;
         padding: 0.6% 0%;
         color: var(--color6);
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
 
     .footer .row a{
@@ -29,8 +29,6 @@ export const FooterStyle = styled.section`
         display: inline-block;
         margin: 0px 1.8rem;
     }
-
-
 
     .footer .row a svg{
         margin:0% 1%;
