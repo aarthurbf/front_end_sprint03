@@ -1,11 +1,15 @@
 import { Link } from 'react-router-dom'
 import { NavStyle } from "../css/NavStyle"
+import Logo from "../assets/images/logo.png"
 
 const Nav = () => {
     return (
         <NavStyle>
             <section className='header'>
                 <div className='header-container'>
+                    <Link to="/">
+                        <img src={Logo} alt="" />
+                    </Link>
                     <ul>
                         <li className='link'>
                             <Link to="/calendar">Calendário</Link>
