@@ -21,7 +21,7 @@ const Footer = () => {
                         </ul>
                     </div>
                     <div className="row">
-                        Ncreative Copyright © 2024 FIAP - Todos direitos reservados 
+                        © 2024 FIAP - Todos direitos reservados 
                     </div>
                 </div>
             </section>
