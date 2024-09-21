@@ -1,8 +1,14 @@
+import { Link } from 'react-router-dom'
 
-const Nav=()=>{
-    return(
+const Nav = () => {
+    return (
         <>
-            <h1>Nav</h1>
+            <Link to="/calendar">Calendário</Link>
+            <Link to="/news">Noticias</Link>
+            <Link to="/car">Carro</Link>
+            <Link to="/shop">Loja</Link>
+            <Link to="/stream">Transmissão</Link>
+            <Link to="/selection">Seleção</Link>
         </>
     )
 }
