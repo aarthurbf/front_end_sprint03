@@ -19,7 +19,7 @@ export const NavStyle = styled.section`
     }
     .header .link{
         font-size: 1.3rem;
-        padding: 0.6rem;
+        padding: 0.7rem;
     }
     .name{
         color: var(--color6);
@@ -29,5 +29,8 @@ export const NavStyle = styled.section`
     }
     .header .link:hover{
         cursor:pointer;
+    }
+    .icon{
+        width:1.2rem;        
     }
 `   
