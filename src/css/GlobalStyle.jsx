@@ -19,6 +19,7 @@ const GlobalStyle = createGlobalStyle`
         --color5: #FF0000;
         --color6: #EBEBF2;
         --color7: #fff;
+        --transition: 0.5s;
     }
 `
 
