@@ -3,96 +3,126 @@ import selectionImage from "../assets/images/image-selection.png";
 
 export const SelectionStyle = styled.section`
   .banner {
-    background: url(${selectionImage});
+    background: url(${selectionImage}) no-repeat center center;
     background-size: cover;
-    min-height: 100vh;
+    min-height: 70vh;
     display: flex;
     justify-content: center;
-    align-items: left;
-    flex-direction: column;
+    align-items: center;
     text-align: left;
+    padding: 0 2rem;
   }
 
   .banner h2 {
     color: var(--color7);
-    text-shadow: #000 1px 2px 6px;
+    text-shadow: 1px 2px 6px #000;
+    font-size: 2.5rem;
     text-transform: uppercase;
-    margin: 1.25rem 10rem;
-    font-size: 3rem;
   }
 
   .selection-container {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    gap: 3rem;
+    padding: 2rem 5%;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
   }
 
   .selection-title {
     color: var(--color3);
-    font-size: 4rem;
-    margin: 4rem 0 0 10rem;
+    font-size: 2.5rem;
   }
 
   .selection-text {
     color: var(--color1);
-    font-size: 1.3rem;
-    margin: 1rem 6rem 0rem 10rem;
+    font-size: 1.1rem;
+    margin-top: 1.5rem;
+    line-height: 1.6;
+  }
+
+  .selection-form {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
   }
 
   .form {
-    width: 550px;
-    height: 450px;
+    width: 100%;
+    max-width: 500px;
     background: var(--color7);
     border-radius: 1rem;
-    box-shadow: 0 0 3rem -10px var(--color1);
-    margin: calc(50vh - 220px) auto;
-    padding: 1.25rem 1.8rem;
-    max-width: calc(100vw - 40px);
-    position: relative;
+    padding: 1.5rem;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1);
   }
+
   .form h2 {
-    margin: 0.6rem 0;
-    padding-bottom: 0.6rem;
-    width: 28%;
+    margin-bottom: 1.5rem;
     color: var(--color3);
-    border-bottom: 3px solid var(--color2);
+    border-bottom: 2px solid var(--color2);
+    padding-bottom: 0.5rem;
   }
+
   .form input {
     width: 100%;
-    padding: 0.6rem;
+    padding: 0.75rem;
+    margin-top: 1rem;
     background: none;
-    outline: none;
-    border: 0;
-    transition: all 0.3s;
     border: 2px solid var(--color6);
-    border-radius: 0.8rem
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    color: var(--color1);
+    outline: none;
+    transition: border 0.3s;
   }
+
   .form input:focus {
-    border: 2px solid var(--color4);
+    border-color: var(--color4);
   }
-  .form p:before {
-    content: attr(type);
-    display: block;
-    margin: 2rem 0.2rem 0.2rem;
-    font-size: 0.9rem;
-    color: var(--color2);
-    text-transform: uppercase;
-    font-weight: 650;
-  }
+
   .form button {
-    float: right;
-    padding: 1rem 1rem;
-    margin: 1rem 0 0;
-    border: 2px solid var(--color5);
-    background: transparent;
-    color: var(--color2);
-    cursor: pointer;
-    transition: all 0.3s;
-    border-radius: 0.8rem;
-  }
-  .form button:hover {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 1.5rem;
     background: var(--color4);
-    color: var(--color6);
+    border: none;
+    color: var(--color7);
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    transition: background 0.3s;
+  }
+
+  .form button:hover {
+    background: var(--color5);
+  }
+
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .banner h2 {
+      font-size: 2rem;
+      margin: 0 1.5rem;
+    }
+
+    .selection-title {
+      font-size: 2rem;
+    }
+
+    .selection-text {
+      font-size: 1rem;
+      margin: 1.5rem 2rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .banner h2 {
+      font-size: 1.5rem;
+    }
+
+    .selection-container {
+      padding: 1rem;
+    }
+
+    .selection-text {
+      font-size: 0.9rem;
+    }
   }
 `;
