@@ -7,7 +7,6 @@ export const LoginStyle = styled.section`
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--color2);
     column-gap: 30px;
   }
   .form {
@@ -17,6 +16,7 @@ export const LoginStyle = styled.section`
     padding: 30px;
     border-radius: 6px;
     background: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   }
   header {
     font-size: 28px;

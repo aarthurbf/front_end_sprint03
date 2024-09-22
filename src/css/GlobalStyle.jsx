@@ -11,6 +11,10 @@ const GlobalStyle = createGlobalStyle`
         text-decoration: none;
     }
 
+    body{
+    background-color: var(--color6);
+    }
+
     :root{
         --color1: #000000;
         --color2: #3F0000;
