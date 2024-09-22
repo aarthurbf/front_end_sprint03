@@ -6,86 +6,61 @@ import Imagem4 from "../assets/images/Image4.png";
 import Imagem5 from "../assets/images/Image5.png";
 import Imagem6 from "../assets/images/Image6.png";
 
+const newsItems = [
+  {
+    img: Imagem1,
+    title: "Atualização Positiva nos Testes do GEN3 Evo",
+    description: "A Mahindra Racing anunciou uma atualização positiva nos testes do carro GEN3 Evo, destacando melhorias em velocidade e eficiência.",
+    link: "#"
+  },
+  {
+    img: Imagem2,
+    title: "Prêmio de Melhor Conteúdo de Mídia Social",
+    description: "A equipe ganhou o prêmio de Melhor Conteúdo de Mídia Social na Fórmula E, reconhecendo seu engajamento e inovação nas plataformas digitais.",
+    link: "#"
+  },
+  {
+    img: Imagem3,
+    title: "Temporada de Sucesso em Londres",
+    description: "A Mahindra Racing terminou a temporada da Fórmula E em alta, com uma performance sólida nas corridas finais em Londres.",
+    link: "#"
+  },
+  {
+    img: Imagem4,
+    title: "Nova Formação de Pilotos",
+    description: "Para a Temporada 10, a equipe contará com os experientes pilotos Nyck de Vries e Edoardo Mortara, trazendo uma combinação de talento e experiência para a equipe.",
+    link: "#"
+  },
+  {
+    img: Imagem5,
+    title: "Parceria com Chotto Matte para o E-Prix de Londres 2024",
+    description: "A Mahindra Racing anunciou uma parceria com o restaurante Chotto Matte para o E-Prix de Londres 2024, trazendo uma experiência gastronômica única para os fãs durante o evento.",
+    link: "#"
+  },
+  {
+    img: Imagem6,
+    title: "Compromisso com a Era Gen3",
+    description: "A Mahindra Racing foi a primeira fabricante a se comprometer com a era Gen3 do Campeonato Mundial de Fórmula E da FIA ABB.",
+    link: "#"
+  }
+];
+
 const News = () => {
   return (
     <NewsStyle>
       <section>
-        <h2 className="produto-title">Noticias</h2>
+        <h2 className="produto-title">Notícias</h2>
         <div className="produto-list">
-          <div className="produto-item">
-            <img src={Imagem1} alt="" />
-            <h3>Atualização Positiva nos Testes do GEN3 Evo</h3>
-            <p>
-              A Mahindra Racing anunciou uma atualização positiva nos testes do
-              carro GEN3 Evo, destacando melhorias em velocidade e eficiência.
-            </p>
-            <a href="" className="btn">
-              Leia mais
-            </a>
-          </div>
-
-          <div className="produto-item">
-            <img src={Imagem2} alt="" />
-            <h3>Prêmio de Melhor Conteúdo de Mídia Social</h3>
-            <p>
-              A equipe ganhou o prêmio de Melhor Conteúdo de Mídia Social na
-              Fórmula E, reconhecendo seu engajamento e inovação nas plataformas
-              digitais.
-            </p>
-            <a href="" className="btn">
-              Leia mais
-            </a>
-          </div>
-
-          <div className="produto-item">
-            <img src={Imagem3} alt="" />
-            <h3>Temporada de Sucesso em Londres</h3>
-            <p>
-              A Mahindra Racing terminou a temporada da Fórmula E em alta, com
-              uma performance sólida nas corridas finais em Londres.
-            </p>
-            <a href="" className="btn">
-              Leia mais
-            </a>
-          </div>
-
-          <div className="produto-item">
-            <img src={Imagem4} alt="" />
-            <h3>Nova Formação de Pilotos</h3>
-            <p>
-              Para a Temporada 10, a equipe contará com os experientes pilotos
-              Nyck de Vries e Edoardo Mortara, trazendo uma combinação de
-              talento e experiência para a equipe.
-            </p>
-            <a href="" className="btn">
-              Leia mais
-            </a>
-          </div>
-
-          <div className="produto-item">
-            <img src={Imagem5} alt="" />
-            <h3>Parceria com Chotto Matte para o E-Prix de Londres 2024</h3>
-            <p>
-              A Mahindra Racing anunciou uma parceria com o restaurante Chotto
-              Matte para o E-Prix de Londres 2024, trazendo uma experiência
-              gastronômica única para os fãs durante o evento.
-            </p>
-            <a href="" className="btn">
-              Leia mais
-            </a>
-          </div>
-
-          <div className="produto-item">
-            <img src={Imagem6} alt="" />
-            <h3>Compromisso com a Era Gen3</h3>
-            <p>
-              A Mahindra Racing foi a primeira fabricante a se comprometer com a
-              era Gen3 do Campeonato Mundial de Fórmula E da FIA ABB
-            </p>
-            <a href="" className="btn">
-              Leia mais
-            </a>
-          </div>
+          {newsItems.map((item, index) => (
+            <div key={index} className="produto-item">
+              <img src={item.img} alt={item.title} />
+              <h3>{item.title}</h3>
+              <p>{item.description}</p>
+              <a href={item.link} className="btn">
+                Leia mais
+              </a>
+            </div>
+          ))}
         </div>
       </section>
     </NewsStyle>
