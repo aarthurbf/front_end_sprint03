@@ -1,6 +1,6 @@
 import { StyledSection } from "../css/StreamStyle";
-import { Link } from 'react-router-dom'
-import Coin from '../assets/images/coin-icon.png'
+import { Link } from 'react-router-dom';
+import Coin from '../assets/images/coin-icon.png';
 
 const Stream = () => {
     return (
@@ -12,9 +12,9 @@ const Stream = () => {
                             <p>Aguarde começar a corrida</p>
                         </div>
                     </div>
+
                     <div className="points-container">
-                        <div className="coin-icon" />
-                        <img src={Coin} alt="" className="coin-icon" />
+                        <img src={Coin} alt="Ícone de moeda" className="coin-icon" />
                         <p>1234</p>
                     </div>
 
@@ -29,8 +29,7 @@ const Stream = () => {
                         <div className="chat-container">
                             <div className="chat-box">
                                 <p>
-                                    <div className="user-icon" />
-                                    Usuário: Ansioso para assistir a Mahindra hoje !
+                                    <span className="user-icon"></span> Usuário: Ansioso para assistir a Mahindra hoje!
                                 </p>
                             </div>
                             <input className="input-box" placeholder="Digite uma mensagem..." />

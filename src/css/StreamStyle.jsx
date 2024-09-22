@@ -6,10 +6,12 @@ export const StyledSection = styled.section`
     justify-content: center;
     align-items: center;
     height: 100vh;
+    padding: 0 1rem; 
   }
 
   .video-wrapper {
     width: 90%;
+    max-width: 1200px; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,7 +27,8 @@ export const StyledSection = styled.section`
 
   .video-player {
     width: 100%;
-    height: 700px;
+    height: 50vh; 
+    max-height: 700px;
     background-color: var(--color2);
     display: flex;
     justify-content: center;
@@ -36,11 +39,10 @@ export const StyledSection = styled.section`
 
   .points-container {
     margin-top: 1rem;
-    width: auto;
     display: flex;
     align-items: center;
     background-color: var(--color7);
-    padding: 5px 0px;
+    padding: 5px 10px;
     border-radius: 5px;
     color: var(--color1);
     font-weight: bold;
@@ -48,12 +50,14 @@ export const StyledSection = styled.section`
   }
 
   .coin-icon {
-    width: 25%;
-    height: 25%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px; 
   }
 
   .chat-section {
     display: flex;
+    flex-direction: column; 
     width: 100%;
     margin-top: 2rem;
   }
@@ -66,13 +70,15 @@ export const StyledSection = styled.section`
     flex-direction: column;
     background-color: var(--color7);
     border-radius: 1rem;
-    margin-right: 10px;
+    margin-bottom: 1rem;
+    padding: 1rem;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   }
 
-  .card-container h1{
+  .card-container h1 {
     color: var(--color1);
     margin-bottom: 10px;
+    text-align: center;
   }
 
   .button-card {
@@ -89,14 +95,15 @@ export const StyledSection = styled.section`
     }
   }
 
-
   .chat-container {
     flex: 2;
     display: flex;
     flex-direction: column;
     background-color: var(--color7);
     border-radius: 1rem;
+    padding: 1rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 0;
   }
 
   .chat-box {
@@ -115,5 +122,41 @@ export const StyledSection = styled.section`
     outline: none;
     font-size: 1rem;
     width: 100%;
+  }
+
+  @media screen and (max-width: 768px) {
+    .video-player {
+      height: 40vh; 
+
+    .points-container {
+      justify-content: center;
+    }
+
+    .card-container {
+      margin-bottom: 1rem;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .video-player {
+      height: 35vh;
+      text-align:center;
+    }
+
+    .points-container {
+      font-size: 0.9rem; 
+    }
+
+    .button-card {
+      padding: 8px 15px; 
+    }
+
+    .chat-section {
+      flex-direction: column;
+    }
+
+    .chat-container {
+      margin-top: 1rem;
+    }
   }
 `;
