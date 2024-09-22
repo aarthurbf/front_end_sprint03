@@ -14,10 +14,10 @@ export const SelectionStyle = styled.section`
   }
 
   .banner h2 {
-    color: var(--color6);
-    text-shadow: #000 2px 3px 4px;
+    color: var(--color7);
+    text-shadow: #000 1px 2px 6px;
     text-transform: uppercase;
-    margin: 1.25rem 15rem;
+    margin: 1.25rem 10rem;
     font-size: 3rem;
   }
 
