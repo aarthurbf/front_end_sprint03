@@ -19,7 +19,7 @@ const Car = () => {
     return (
         <CarStyle>
             <div className="banner">
-                <h2>Em busca do próximo campeão da Fórmula E</h2>
+                <h2>M10ELECTRO</h2>
             </div>
             <div className="container">
                 <div className="specs">

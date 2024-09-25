@@ -126,6 +126,12 @@ export const CarStyle = styled.section`
     .content p {
       font-size: 1.2rem;
     }
+
+    .container {
+      justify-content: center;
+      text-align: center;
+      padding:0;
+    }
   }
 
   @media (max-width: 480px) {
