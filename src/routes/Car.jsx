@@ -3,9 +3,10 @@ import { useState } from 'react';
 import Carro1 from '../assets/images/carro1.jpg';
 import Carro2 from '../assets/images/carro2.jpg';
 import Carro3 from '../assets/images/carro3.jpg';
+import Carro4 from '../assets/images/carro4.jpg';
 
 const Car = () => {
-    const images = [Carro1, Carro2, Carro3];
+    const images = [Carro1, Carro2, Carro3, Carro4];
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const changeSlide = (direction) => {

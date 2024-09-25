@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import CarImage from '../assets/images/carro.png';
+import CarImage from '../assets/images/carro.jpg';
 
 export const CarStyle = styled.section`
   .banner {
