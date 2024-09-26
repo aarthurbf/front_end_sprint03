@@ -5,19 +5,16 @@ import Nick from '../assets/images/nick.png';
 
 const Home = () => {
     const [expanded, setExpanded] = useState(null);
-
     const handleExpand = (driver) => {
         setExpanded(driver === expanded ? null : driver);
     };
-
     return (
         <HomeStyle.Container>
-            {/* Lado do Edoardo Mortara */}
             <HomeStyle.Side
                 expanded={expanded === 'mortara'}
                 onClick={() => handleExpand('mortara')}
                 left
-                hide={expanded === 'devries'} /* Oculta Nick de Vries se Mortara estiver expandido */
+                hide={expanded === 'devries'}
             >
                 <HomeStyle.InfoTop expanded={expanded === 'mortara'} left>
                     <h2>Edoardo Mortara</h2>
@@ -43,13 +40,11 @@ const Home = () => {
                     </HomeStyle.Details>
                 )}
             </HomeStyle.Side>
-
-            {/* Lado do Nick de Vries */}
             <HomeStyle.Side
                 expanded={expanded === 'devries'}
                 onClick={() => handleExpand('devries')}
                 right
-                hide={expanded === 'mortara'} /* Oculta Mortara se Nick de Vries estiver expandido */
+                hide={expanded === 'mortara'}
             >
                 <HomeStyle.InfoTop expanded={expanded === 'devries'} right>
                     <h2>Nick de Vries</h2>

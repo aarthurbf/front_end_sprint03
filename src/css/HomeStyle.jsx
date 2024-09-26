@@ -1,16 +1,14 @@
 import styled from "styled-components";
-
 export const HomeStyle = {
     Container: styled.div`
       display: flex;
       height: 100vh;
       width: 100%;
-      overflow: hidden; /* Para evitar que o conteúdo transborde durante a transição */
+      overflow: hidden;
     `,
-
     Side: styled.div`
       flex: ${({ expanded }) => (expanded ? '1' : '0.5')}; 
-      transition: flex 1s ease, width 1s ease; /* Transição mais suave */
+      transition: flex 1s ease, width 1s ease;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -27,12 +25,11 @@ export const HomeStyle = {
         flex: ${({ expanded }) => (expanded ? '1' : '0.5')};
       }
     `,
-
     Image: styled.div`
       img {
         max-width: 100%;
         height: auto;
-        transition: transform 1s ease; /* Suavizando a transição da imagem */
+        transition: transform 1s ease;
         transform: ${({ expanded }) => (expanded ? 'translateY(0)' : 'translateY(0)')};
         position: absolute;
         bottom: 0;
@@ -44,13 +41,12 @@ export const HomeStyle = {
       width: 100%;
       height: ${({ expanded }) => (expanded ? 'auto' : '50%')}; 
     `,
-
     InfoTop: styled.div`
       text-align: center;
       margin-bottom: 20px;
       h2 {
-        font-size: 2.5rem; /* Aumentado o tamanho da fonte */
-        font-weight: bold;  /* Deixar o texto mais chamativo */
+        font-size: 2.5rem;
+        font-weight: bold;
       }
       p {
         font-size: 1.5rem;
@@ -66,26 +62,25 @@ export const HomeStyle = {
         }
       }
     `,
-
     Details: styled.div`
       display: flex;
-      justify-content: space-between; /* Coloca os textos à esquerda e à direita */
-      align-items: flex-start; /* Mantém os textos na parte de cima */
+      justify-content: space-between;
+      align-items: flex-start;
       width: 100%;
       padding: 20px;
       position: absolute;
-      top: 10%; /* Posiciona os textos no topo, mas não colados */
+      top: 10%; 
       opacity: ${({ expanded }) => (expanded ? '1' : '0')};
-      transition: opacity 0.8s ease-in-out; /* Suaviza a transição de visibilidade */
+      transition: opacity 0.8s ease-in-out; 
   
       h3 {
-        font-size: 2rem; /* Deixa o título mais chamativo */
+        font-size: 2rem; 
         font-weight: bold;
         margin: 0;
       }
   
       p {
-        font-size: 1.5rem; /* Aumenta os textos */
+        font-size: 1.5rem; 
         margin: 0;
       }
   
