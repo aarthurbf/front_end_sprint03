@@ -1,97 +1,117 @@
 import styled from "styled-components";
-export const HomeStyle = {
-    Container: styled.div`
-      display: flex;
-      height: 100vh;
-      width: 100%;
-      overflow: hidden;
-    `,
-    Side: styled.div`
-      flex: ${({ expanded }) => (expanded ? '1' : '0.5')}; 
-      transition: flex 1s ease, width 1s ease;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-      background-color: ${({ left }) => (left ? '#e74c3c' : '#ecf0f1')};
-      color: ${({ left }) => (left ? '#fff' : '#2c3e50')};
-      cursor: pointer;
-      position: relative;
-      overflow: hidden;
-      width: ${({ expanded }) => (expanded ? '100%' : '50%')}; 
-      height: 100%;
-  
-      @media (max-width: 768px) {
-        flex: ${({ expanded }) => (expanded ? '1' : '0.5')};
-      }
-    `,
-    Image: styled.div`
-      img {
-        max-width: 100%;
-        height: auto;
-        transition: transform 1s ease;
-        transform: ${({ expanded }) => (expanded ? 'translateY(0)' : 'translateY(0)')};
-        position: absolute;
-        bottom: 0;
-      }
-  
-      display: flex;
-      align-items: flex-end;
-      justify-content: center;
-      width: 100%;
-      height: ${({ expanded }) => (expanded ? 'auto' : '50%')}; 
-    `,
-    InfoTop: styled.div`
-      text-align: center;
-      margin-bottom: 20px;
-      h2 {
-        font-size: 2.5rem;
-        font-weight: bold;
-      }
-      p {
-        font-size: 1.5rem;
-        margin-top: 10px;
-      }
-  
-      @media (max-width: 768px) {
-        h2 {
-          font-size: 1.8rem;
+
+export const HomeStyle = styled.section`
+  .container {
+            display: flex;
+            align-items: flex-start;
+            padding: 20px;
         }
-        p {
-          font-size: 1.2rem;
+        .profile-image {
+            max-width: 50%;
         }
-      }
-    `,
-    Details: styled.div`
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      width: 100%;
-      padding: 20px;
-      position: absolute;
-      top: 10%; 
-      opacity: ${({ expanded }) => (expanded ? '1' : '0')};
-      transition: opacity 0.8s ease-in-out; 
-  
-      h3 {
-        font-size: 2rem; 
-        font-weight: bold;
-        margin: 0;
-      }
-  
-      p {
-        font-size: 1.5rem; 
-        margin: 0;
-      }
-  
-      @media (max-width: 768px) {
-        h3 {
-          font-size: 1.5rem;
+        .profile-image img {
+            width: 100%;
+            height: auto;
         }
-  
-        p {
-          font-size: 1.2rem;
+        .profile-info {
+            max-width: 50%;
+            margin-left: 20px;
         }
-      }
-    `,
-};
+        .profile-info h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+        .profile-info h2 {
+            font-size: 24px;
+            margin: 0;
+            font-weight: normal;
+        }
+        .stats {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .stats-column {
+            display: flex;
+            flex-direction: column;
+        }
+        .stats div {
+            margin-bottom: 20px;
+        }
+        .stats div span {
+            display: block;
+            font-size: 48px;
+            font-weight: bold;
+        }
+        .stats div p {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        .selection-container {
+    padding: 2rem 5%;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .selection-title {
+    color: var(--color3);
+    font-size: 2.5rem;
+  }
+
+  .selection-text {
+    color: var(--color1);
+    font-size: 1.1rem;
+    margin-top: 1.5rem;
+    line-height: 1.6;
+  }
+      // Slideshow 
+  .slideshow-container {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+  }
+
+  .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+
+  .slide-active {
+    opacity: 1;
+  }
+
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    font-size: 2rem;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    z-index: 1;
+  }
+
+  .prev {
+    left: 0;
+  }
+
+  .next {
+    right: 0;
+  }
+
+`
