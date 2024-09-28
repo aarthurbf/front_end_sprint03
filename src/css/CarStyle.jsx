@@ -24,7 +24,7 @@ export const CarStyle = styled.section`
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 20rem;
+    padding: 5rem 2rem;
     flex-wrap: wrap;
   }
 
@@ -113,7 +113,28 @@ export const CarStyle = styled.section`
     right: 0;
   }
 
-  // Responsividade
+  // Responsividade para tablets e celulares
+  @media (max-width: 1024px) {
+    .container {
+      padding: 3rem 1rem;
+      flex-direction: column;
+    }
+
+    .banner h2 {
+      font-size: 2.2rem;
+    }
+
+    .content h1 {
+      font-size: 3rem;
+      text-align:center;
+    }
+
+    .content p {
+      font-size: 1.4rem;
+      text-align:center;
+    }
+  }
+
   @media (max-width: 768px) {
     .banner h2 {
       font-size: 2rem;
@@ -130,7 +151,7 @@ export const CarStyle = styled.section`
     .container {
       justify-content: center;
       text-align: center;
-      padding:0;
+      padding: 2rem;
     }
   }
 

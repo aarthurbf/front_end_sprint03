@@ -1,7 +1,7 @@
 import { ShopStyle } from '../css/ShopStyle';
 import { useState } from 'react';
-import Carro1 from '../assets/images/carro1.jpg';
-import Carro2 from '../assets/images/carro2.jpg';
+import Clothe1 from '../assets/images/clothe1.jpg';
+import Clothe2 from '../assets/images/clothe2.jpg';
 import Produto from '../assets/images/produto.jpg';
 import Produto1 from '../assets/images/produto1.jpg';
 import Produto2 from '../assets/images/produto2.jpg';
@@ -78,7 +78,7 @@ const pointsProducts = [
 
 const Shop = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const images = [Carro1, Carro2];
+  const images = [Clothe1, Clothe2];
 
   const changeSlide = (direction) => {
     setCurrentIndex((prevIndex) =>

@@ -6,9 +6,12 @@ import Carro1 from '../assets/images/carro1.jpg';
 import Carro2 from '../assets/images/carro2.jpg';
 import Carro3 from '../assets/images/carro3.jpg';
 import Carro4 from '../assets/images/carro4.jpg';
+import Carro5 from '../assets/images/carro5.jpg';
+import Carro6 from '../assets/images/carro6.jpg';
+import Carro7 from '../assets/images/carro7.jpg';
 
 const Home = () => {
-    const images = [Carro1, Carro2, Carro3, Carro4];
+    const images = [Carro1, Carro2, Carro3, Carro4,Carro5,Carro6,Carro7];
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const changeSlide = (direction) => {
