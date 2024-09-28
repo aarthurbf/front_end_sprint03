@@ -18,6 +18,7 @@ const Home = () => {
                 : (prevIndex === 0 ? images.length - 1 : prevIndex - 1)
         );
     };
+
     return (
         <HomeStyle>
             <section>
@@ -30,118 +31,83 @@ const Home = () => {
                     <button className="prev" onClick={() => changeSlide("prev")}>❮</button>
                     <button className="next" onClick={() => changeSlide("next")}>❯</button>
                 </section>
-                <div className="container">
-                    <div className="profile-image">
-                        <img alt="Two race car drivers in Mahindra racing suits, one with a helmet and one without, standing with arms crossed." height="600" src={Mortara} width="400" />
-                    </div>
-                    <div className="profile-info">
-                        <h1>
-                            EDOARDO MORTARA
-                        </h1>
-                        <h2>
-                            PILOTO
-                        </h2>
-                        <div className="stats">
-                            <div className="stats-column">
-                                <div>
-                                    <span>
-                                        P2
-                                    </span>
-                                    <p>
-                                        Melhor Resultado
-                                        <br />
-                                        Campeonato Mundial
-                                    </p>
+
+                {/* Seção do Edoardo Mortara */}
+                <section className="section-edoardo">
+                    <div className="container profile-left">
+                        <div className="profile-image">
+                            <img alt="Edoardo Mortara" height="600" src={Mortara} width="400" />
+                        </div>
+                        <div className="profile-info">
+                            <h1 className='mortara'>EDOARDO MORTARA</h1>
+                            <h2 className='mortara'>PILOTO</h2>
+                            <div className="stats">
+                                <div className="stats-column">
+                                    <div>
+                                        <span>P2</span>
+                                        <p>Melhor Resultado<br />Campeonato Mundial</p>
+                                    </div>
+                                    <div>
+                                        <span>6</span>
+                                        <p>Vitórias</p>
+                                    </div>
                                 </div>
-                                <div>
-                                    <span>
-                                        6
-                                    </span>
-                                    <p>
-                                        Vitórias
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="stats-column">
-                                <div>
-                                    <span>
-                                        13
-                                    </span>
-                                    <p>
-                                        Pódios
-                                    </p>
-                                </div>
-                                <div>
-                                    <span>
-                                        3
-                                    </span>
-                                    <p>
-                                        Poles Positions
-                                    </p>
+                                <div className="stats-column">
+                                    <div>
+                                        <span>13</span>
+                                        <p>Pódios</p>
+                                    </div>
+                                    <div>
+                                        <span>3</span>
+                                        <p>Poles Positions</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div className="container">
-                    <div className="profile-image">
-                        <img alt="Two race car drivers in Mahindra racing suits, one with a helmet and one without, standing with arms crossed." height="600" src={Mortara} width="400" />
-                    </div>
-                    <div className="profile-info">
-                        <h1>
-                            EDOARDO MORTARA
-                        </h1>
-                        <h2>
-                            PILOTO
-                        </h2>
-                        <div className="stats">
-                            <div className="stats-column">
-                                <div>
-                                    <span>
-                                        P2
-                                    </span>
-                                    <p>
-                                        Melhor Resultado
-                                        <br />
-                                        Campeonato Mundial
-                                    </p>
+                </section>
+
+                {/* Seção do Nick De Vries com fundo vermelho */}
+                <section className="section-nick">
+                    <div className="container profile-right">
+                        <div className="profile-info">
+                            <h1>NICK DE VRIES</h1>
+                            <h2>PILOTO</h2>
+                            <div className="stats">
+                                <div className="stats-column">
+                                    <div>
+                                        <span>P1</span>
+                                        <p>Melhor Resultado<br />Campeonato Mundial</p>
+                                    </div>
+                                    <div>
+                                        <span>4</span>
+                                        <p>Vitórias</p>
+                                    </div>
                                 </div>
-                                <div>
-                                    <span>
-                                        6
-                                    </span>
-                                    <p>
-                                        Vitórias
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="stats-column">
-                                <div>
-                                    <span>
-                                        13
-                                    </span>
-                                    <p>
-                                        Pódios
-                                    </p>
-                                </div>
-                                <div>
-                                    <span>
-                                        3
-                                    </span>
-                                    <p>
-                                        Poles Positions
-                                    </p>
+                                <div className="stats-column">
+                                    <div>
+                                        <span>8</span>
+                                        <p>Pódios</p>
+                                    </div>
+                                    <div>
+                                        <span>2</span>
+                                        <p>Poles Positions</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <div className="profile-image">
+                            <img alt="Nick" height="600" src={Nick} width="400" />
+                        </div>
                     </div>
-                </div>
+                </section>
+
                 <div className="selection-container">
-                    <h1 className="selection-title">Seleção especial</h1>
+                    <h1 className="selection-title">POPULARIZAÇÃO DO FÓRMULA E NO BRASIL</h1>
                     <p className="selection-text">
-                        Transformando sonhos em realidade, nosso projeto oferece uma seleção especial para jovens brasileiros se tornarem pilotos de Fórmula E. Ao serem selecionados, esses talentos terão a oportunidade de se tornarem ídolos nacionais e internacionais, elevando o nome do Brasil no cenário automobilístico mundial.
-                        <br /><br />
-                        Esta iniciativa visa não apenas descobrir novos talentos, mas também popularizar a Fórmula E no Brasil, inspirando uma nova geração de entusiastas e promovendo a sustentabilidade no esporte a motor.
+                        Como parte da Mahindra Racing, estamos comprometidos em aumentar a presença e o interesse pela Fórmula E no Brasil. Em parceria com a FIA e outras equipes, buscamos expandir o alcance e promover o envolvimento dos brasileiros com a categoria.
+                        Através de ações estratégicas, iniciativas educativas e eventos envolventes, buscamos não apenas aumentar a conscientização sobre a Fórmula E, mas também inspirar uma nova geração de entusiastas e profissionais do automobilismo elétrico no país.
+                        A Fórmula E é única por ser um esporte automobilístico totalmente elétrico, contribuindo significativamente para a sustentabilidade ambiental ao reduzir as emissões de carbono e promover tecnologias mais limpas. No entanto, o desconhecimento sobre essa característica pode levar as pessoas a não reconhecerem o impacto positivo que a Fórmula E tem no meio ambiente, resultando em menos apoio e engajamento com a categoria.
                     </p>
                 </div>
             </section>
