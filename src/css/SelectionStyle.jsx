@@ -95,7 +95,6 @@ export const SelectionStyle = styled.section`
     background: var(--color5);
   }
 
-  /* Responsividade */
   @media (max-width: 768px) {
     .banner h2 {
       font-size: 2rem;

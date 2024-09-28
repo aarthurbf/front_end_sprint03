@@ -11,7 +11,7 @@ import Carro6 from '../assets/images/carro6.jpg';
 import Carro7 from '../assets/images/carro7.jpg';
 
 const Home = () => {
-    const images = [Carro1, Carro2, Carro3, Carro4,Carro5,Carro6,Carro7];
+    const images = [Carro1, Carro2, Carro3, Carro4, Carro5, Carro6, Carro7];
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const changeSlide = (direction) => {
@@ -35,7 +35,6 @@ const Home = () => {
                     <button className="next" onClick={() => changeSlide("next")}>❯</button>
                 </section>
 
-                {/* Seção do Edoardo Mortara */}
                 <section className="section-edoardo">
                     <div className="container profile-left">
                         <div className="profile-image">
@@ -70,7 +69,6 @@ const Home = () => {
                     </div>
                 </section>
 
-                {/* Seção do Nick De Vries com fundo vermelho */}
                 <section className="section-nick">
                     <div className="container profile-right">
                         <div className="profile-info">

@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const ShopStyle = styled.section`
-  // Slideshow 
   .slideshow-container {
     position: relative;
     width: 100%;
@@ -49,7 +48,6 @@ export const ShopStyle = styled.section`
     right: 10px;
   }
 
-  // Product Grid 
   .container {
     width: 100%;
     margin: 0 auto;
@@ -123,7 +121,6 @@ export const ShopStyle = styled.section`
     color: #e60000;
   }
 
-  // Responsividade
   @media (max-width: 768px) {
     .product-grid {
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));

@@ -3,7 +3,6 @@ import { LoginStyle } from "../css/LoginStyle";
 import Google from "../assets/images/google.png";
 import Facebook from "../assets/images/facebook.png";
 
-// Função simples para criptografar e descriptografar strings
 const encrypt = (text) => {
   return btoa(text);
 };
@@ -16,19 +15,17 @@ const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
-  const [isLoggedIn, setIsLoggedIn] = useState(false); 
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
-  // Função de validação de login
   const handleLogin = (e) => {
     e.preventDefault();
 
-    // Verifica se o email e a senha são 'admin'
     if (email === "admin" && password === "admin") {
       alert("Login bem-sucedido!");
 
       let token =
-        Math.random().toString(16).substring(2)+toString(16).substring(2)
-  
+        Math.random().toString(16).substring(2) + toString(16).substring(2)
+
       sessionStorage.setItem("user", encrypt(email));
       sessionStorage.setItem("password", token);
       setIsLoggedIn(true);
@@ -37,14 +34,12 @@ const Login = () => {
     }
   };
 
-  // Função para fazer logout
   const handleLogout = () => {
     sessionStorage.removeItem("user");
     sessionStorage.removeItem("password");
     setIsLoggedIn(false);
   };
 
-  // Verifica se o usuário já está logado ao carregar o componente
   React.useEffect(() => {
     if (sessionStorage.getItem("user")) {
       setIsLoggedIn(true);
@@ -57,8 +52,7 @@ const Login = () => {
         <div className="form login">
           <div className="form-content">
             <header>Login</header>
-            {/* Se estiver logado, mostra a opção de logout */}
-            {isLoggedIn ? ( 
+            {isLoggedIn ? (
               <div className="welcome-container">
                 <h2 className="welcome-message">Bem-vindo, {decrypt(sessionStorage.getItem("user"))}!</h2>
                 <button className="logout-button" onClick={handleLogout}>Logout</button>
@@ -83,7 +77,6 @@ const Login = () => {
                     onChange={(e) => setPassword(e.target.value)}
                   />
                 </div>
-                {/* Erro caso esteja errado as credencias */}
                 {error && <p style={{ color: "red" }}>{error}</p>}
                 <div className="form-link">
                   <a href="#" className="forgot-pass">

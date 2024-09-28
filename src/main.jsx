@@ -10,7 +10,6 @@ import Car from './routes/Car.jsx'
 import News from './routes/News.jsx'
 import Selection from './routes/Selection.jsx'
 import Shop from './routes/Shop.jsx'
-import TeamWear from './routes/TeamWear.jsx'
 import Stream from './routes/Stream.jsx'
 
 
@@ -27,7 +26,6 @@ const router = createBrowserRouter([
       { path: '/news', element: <News /> },
       { path: '/selection', element: <Selection /> },
       { path: '/shop', element: <Shop /> },
-      { path: '/teamWear', element: <TeamWear /> },
       { path: '/Stream', element: <Stream /> },
     ]
   }

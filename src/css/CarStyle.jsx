@@ -65,7 +65,6 @@ export const CarStyle = styled.section`
     max-width: 600px;
   }
 
-  // Slideshow 
   .slideshow-container {
     position: relative;
     width: 100%;
@@ -113,7 +112,6 @@ export const CarStyle = styled.section`
     right: 0;
   }
 
-  // Responsividade para tablets e celulares
   @media (max-width: 1024px) {
     .container {
       padding: 3rem 1rem;

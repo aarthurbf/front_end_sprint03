@@ -16,13 +16,12 @@ export const HomeStyle = styled.section`
   .profile-left .profile-info {
     max-width: 55%;
     margin-left: 5rem;
-    color: black; /* Texto do Mortara agora é preto */
+    color: black; 
   }
 
-  /* Forçar o título e subtítulo do Mortara a ficarem pretos */
   .profile-left .profile-info h1,
   .profile-left .profile-info h2 {
-    color: black; /* Força o texto a ficar preto */
+    color: black; 
   }
 
   .profile-right {
@@ -37,8 +36,8 @@ export const HomeStyle = styled.section`
 
   .profile-right .profile-image {
     max-width: 40%;
-    margin-bottom: 0; /* Remove qualquer espaçamento inferior da imagem */
-    padding-bottom: 0; /* Remove padding inferior */
+    margin-bottom: 0; 
+    padding-bottom: 0; 
   }
 
   .profile-image img {
@@ -105,13 +104,12 @@ export const HomeStyle = styled.section`
     line-height: 1.6;
   }
 
-  /* Seção do Nick De Vries com fundo vermelho */
   .section-nick {
     background-color: red;
     color: white;
     padding-top: 10rem;
-    padding-bottom: 0; /* Remove qualquer padding adicional na parte inferior */
-    margin-bottom: 0; /* Remove qualquer margem inferior */
+    padding-bottom: 0; 
+    margin-bottom: 0; 
   }
 
   /* Slideshow */
@@ -163,7 +161,6 @@ export const HomeStyle = styled.section`
     right: 0;
   }
 
-  /* Media Queries */
   @media (max-width: 1024px) {
     .container {
       flex-direction: column;
@@ -184,7 +181,7 @@ export const HomeStyle = styled.section`
     }
 
     .profile-image {
-      max-width: 90%; /* Aumentando um pouco o tamanho da imagem */
+      max-width: 90%; 
     }
 
     .profile-info h1 {
@@ -218,7 +215,7 @@ export const HomeStyle = styled.section`
     }
 
     .profile-image {
-      max-width: 95%; /* Aumentando a imagem para tablets */
+      max-width: 95%; 
     }
 
     .stats div span {
@@ -244,7 +241,7 @@ export const HomeStyle = styled.section`
     }
 
     .profile-image {
-      max-width: 100%; /* Aumentando ao máximo para celulares */
+      max-width: 100%; 
     }
 
     .stats div span {

@@ -16,7 +16,7 @@ const products = [
     brand: 'MAHINDRA RACING',
     price: 'R$309,99',
     isNew: true,
-    link: '/produto/2024-team-t-shirt' 
+    link: '/produto/2024-team-t-shirt'
   },
   {
     id: 2,
@@ -25,7 +25,7 @@ const products = [
     brand: 'MAHINDRA RACING',
     price: 'R$199,99',
     isNew: false,
-    link: '/produto/season-10-championship-cap' 
+    link: '/produto/season-10-championship-cap'
   },
   {
     id: 3,
@@ -34,7 +34,7 @@ const products = [
     brand: 'MAHINDRA RACING',
     price: 'R$208,99',
     isNew: false,
-    link: '/produto/season-10-championship-cap' 
+    link: '/produto/season-10-championship-cap'
   },
   {
     id: 4,
@@ -43,7 +43,7 @@ const products = [
     brand: 'MAHINDRA RACING',
     price: 'R$407,99',
     isNew: true,
-    link: '/produto/season-10-championship-cap' 
+    link: '/produto/season-10-championship-cap'
   },
   {
     id: 5,
@@ -52,29 +52,29 @@ const products = [
     brand: 'MAHINDRA RACING',
     price: 'R$120,99',
     isNew: false,
-    link: '/produto/season-10-championship-cap' 
+    link: '/produto/season-10-championship-cap'
   },
 ];
 const pointsProducts = [
-    {
-      id: 1,
-      image: Produto1,  
-      title: 'Team Cap Limited Edition',
-      brand: 'MAHINDRA RACING',
-      price: '1500 Mahindra Points',
-      isNew: false,
-      link: '/produto/exclusive-team-mug'
-    },
-    {
-      id: 2,
-      image: Produto4,
-      title: '20/21 Team Polo Limited Edition',
-      brand: 'MAHINDRA RACING',
-      price: '2500 Mahindra Points',
-      isNew: false,
-      link: '/produto/team-cap-limited-edition'
-    },
-  ];
+  {
+    id: 1,
+    image: Produto1,
+    title: 'Team Cap Limited Edition',
+    brand: 'MAHINDRA RACING',
+    price: '1500 Mahindra Points',
+    isNew: false,
+    link: '/produto/exclusive-team-mug'
+  },
+  {
+    id: 2,
+    image: Produto4,
+    title: '20/21 Team Polo Limited Edition',
+    brand: 'MAHINDRA RACING',
+    price: '2500 Mahindra Points',
+    isNew: false,
+    link: '/produto/team-cap-limited-edition'
+  },
+];
 
 const Shop = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -114,9 +114,9 @@ const Shop = () => {
           ))}
         </div>
       </div>
-    
-    <div className="container">
-      <h1>MAHINDRA POINTS</h1>
+
+      <div className="container">
+        <h1>MAHINDRA POINTS</h1>
         <div className="product-grid">
           {pointsProducts.map((product) => (
             <a href={product.link} key={product.id} className="product-item">
@@ -128,7 +128,7 @@ const Shop = () => {
             </a>
           ))}
         </div>
-    </div>
+      </div>
     </ShopStyle>
   );
 };
