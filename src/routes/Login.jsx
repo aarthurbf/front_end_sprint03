@@ -26,9 +26,11 @@ const Login = () => {
     if (email === "admin" && password === "admin") {
       alert("Login bem-sucedido!");
 
-      // Armazena email e senha no sessionStorage
+      let token =
+        Math.random().toString(16).substring(2)+toString(16).substring(2)
+  
       sessionStorage.setItem("user", encrypt(email));
-      sessionStorage.setItem("password", encrypt(password));
+      sessionStorage.setItem("password", token);
       setIsLoggedIn(true);
     } else {
       setError("Usuário ou senha incorretos.");
