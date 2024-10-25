@@ -1,6 +1,7 @@
 import { StyledSection } from "../css/StreamStyle";
 import { Link } from 'react-router-dom';
 import Coin from '../assets/images/coin-icon.png';
+import Temp from '../assets/images/temperatura-alta.png';
 
 const Stream = () => {
     return (
@@ -13,10 +14,17 @@ const Stream = () => {
                         </div>
                     </div>
 
+                <div className="status-container">
                     <div className="points-container">
                         <img src={Coin} alt="Ícone de moeda" className="coin-icon" />
                         <p>1234</p>
                     </div>
+
+                    <div className="points-container">
+                        <img src={Temp} alt="Ícone de moeda" className="coin-icon" />
+                        <p>13°C</p>
+                    </div>
+                </div>
 
                     <div className="chat-section">
                         <div className="card-container">

@@ -37,6 +37,12 @@ export const StyledSection = styled.section`
     font-size: 1.5rem;
   }
 
+  .status-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
   .points-container {
     margin-top: 1rem;
     display: flex;
