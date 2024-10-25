@@ -133,7 +133,7 @@ export const StyledSection = styled.section`
   @media screen and (max-width: 768px) {
     .video-player {
       height: 40vh; 
-
+    }
     .points-container {
       justify-content: center;
     }
